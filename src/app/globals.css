@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Hide the horizontal scrollbar for WebKit browsers */
+.service-scroll-container {
+  display: flex; /* Flex container for services */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.service-scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+/* Existing service-card styles */
+.service-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 150px; /* Set a minimum width for uniformity */
+  max-width: 180px; /* Set a max width to prevent overly large cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.service-card div {
+  transition: background-color 0.3s ease;
+}
+
+.service-card:hover div {
+  background-color: #4c51bf; /* Darker shade for the icon background on hover */
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif; /* Consistent font for headings */
+  font-weight: 700; /* Bold for emphasis */
+  margin-bottom: 1.5rem; /* Space below the heading */
+}
+img {
+  transition: transform 0.3s ease-out; /* Smooth transition for tilting */
+}
+
+body, html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 4px;  
+  height: 10px;             /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;      /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;   /* Color of the scrollbar thumb */
+  border-radius: 10px;      /* Rounded corners for the thumb */
+  border: 1px solid #f1f1f1; /* Adds padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;         /* Color of the scrollbar thumb when hovering */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width:thin;      /* Scrollbar width */
+  scrollbar-color: #888 #f1f1f1; /* Thumb and track color */
+}
