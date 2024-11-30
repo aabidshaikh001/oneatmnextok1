@@ -150,7 +150,7 @@ const HomePage = () => {
       <div className="w-full max-w-6xl mx-auto py-20 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-center md:text-left space-y-4">
           <h2 className="text-6xl font-bold text-gray-800">
-            India's Most-loved Payments App
+            India&lsquo;s Most-loved Payments App
           </h2>
           <p className="text-xl text-gray-600 pb-5">
             Recharge & pay bills, Bank Cards & Micro ATM, Mobile Wallet & UPI, and do a lot more.

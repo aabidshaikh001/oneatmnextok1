@@ -3,7 +3,7 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the CSS for React Toastify
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
 interface FormData {
@@ -95,7 +95,7 @@ const ContactUsPage: React.FC = () => {
         message: "",
       });
       setErrors({});
-    } catch (error) {
+    } catch  {
       toast.error("There was an error sending your message. Please try again later.", {
         position: "top-center",
         autoClose: 3000,
