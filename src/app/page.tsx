@@ -155,7 +155,7 @@ const HomePage = () => {
           <p className="text-xl text-gray-600 pb-5">
             Recharge & pay bills, Bank Cards & Micro ATM, Mobile Wallet & UPI, and do a lot more.
           </p>
-          <Link href="/Started" className="bg-black hover:bg-gray-800 text-white py-2 px-6 rounded-lg">
+          <Link href="/Started" className="bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-lg">
             Get Started
           </Link>
         </div>
